@@ -5,10 +5,12 @@ function About({ bio, github, linkedin }) {
   return (
     <div id="about">
       <h2>About Me</h2>
-      {bio && bio !== "" && <p>{bio}</p>}
+      {bio ? <p>{bio}</p> : null}
       <Links github={github} linkedin={linkedin} />
     </div>
   );
 }
 
 export default About;
+
+
